@@ -74,7 +74,7 @@ for i in  `sudo awk '{print $1}' /var/log/nginx/access.log | sort -u`; do whois 
 ```
 
 
-Вывод ошибки
+#### Вывод ошибки
 ```
 sudo awk '{print $9}' /var/log/nginx/access.log
 sudo awk '{print $9}' /var/log/nginx/access.log | grep -P "(^[0-9]$)"
