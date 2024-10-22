@@ -49,6 +49,17 @@ ip a | grep -P "([0-9aA-fF]{2}:){5}[0-9a-fA-F]{2}.*" -o -n
 ```
 ip a | grep -P "^.*00$" -o`
 ```
+Фильтруем пустрые строки и комментарии
+```
+sudo grep -v ^# /etc/init.d/nginx | grep -v ^$ | wc -l
+sudo grep -v ^# /etc/ssh/sshd_config | grep -v ^$
+```
+
+Считаем строки
+```
+wc -l /etc/init.d/nginx
+type systemctl
+```
 
 #### Парсинг логов по ip
 
