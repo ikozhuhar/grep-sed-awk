@@ -1,4 +1,4 @@
-### grep/sed/awk
+### grep sed awk
 
 #### <a name='toc'>Содержание</a>
 
